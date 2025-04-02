@@ -2,6 +2,7 @@
 <html lang="zh">  
 <head>  
   <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>个性化学情分析图 – 真实数据生成</title>  
   <style>  
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }  
@@ -28,8 +29,9 @@
       display: block;  
       margin: 10px auto;  
       background: #fff;  
-      width: 100%;  
+      width: 90%;  /* 设置为90%来适配屏幕 */  
       height: auto;  
+      max-width: 800px;  /* 设置最大宽度，以控制图表的过大 */  
     }  
     /* 节点文本 */  
     .node text { pointer-events: none; font-size: 12px; }  
