@@ -46,6 +46,18 @@
       border-radius: 8px;  
       pointer-events: none;  
       opacity: 0;  
+    }   
+    /* 使用说明样式 */   
+    #instructions {  
+      text-align: center;  
+      margin: 20px auto;  
+      font-size: 16px;  
+      color: #333;  
+      max-width: 800px;  
+      padding: 10px;  
+      background: #f9f9f9;  
+      border: 1px solid #ccc;  
+      border-radius: 8px;  
     }  
   </style>  
 </head>  
@@ -56,6 +68,15 @@
   <svg id="graph" viewBox="0 0 1920 1080" preserveAspectRatio="xMinYMin meet"></svg>  
   <!-- 悬浮提示框 -->  
   <div id="tooltip" class="tooltip"></div>  
+  <!-- 使用说明 -->  
+  <div id="instructions">  
+    <p>使用说明：</p>  
+    <ul>  
+      <li>点击导航栏中的学生姓名以切换查看不同学生的学情分析图。</li>  
+      <li>将鼠标悬停在节点上以查看该节点的详细信息，例如当前掌握率、历史掌握率和学习次数。</li>  
+      <li>图中不同颜色的节点表示不同的掌握率：红色表示较低掌握率，绿色表示较高掌握率。</li>  
+    </ul>  
+  </div>  
 
   <!-- 引入 D3.js -->  
   <script src="https://d3js.org/d3.v6.min.js"></script>  
